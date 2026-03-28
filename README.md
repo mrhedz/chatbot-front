@@ -42,7 +42,7 @@ Está diseñado como una demo funcional lista para evolucionar a soluciones con 
 
 ## Demo en producción
 
-```id="x9k2lm"
+
 https://chatbot-front-p6xs3s8w9-mrhedzs-projects.vercel.app/
 
 ---
@@ -51,9 +51,8 @@ https://chatbot-front-p6xs3s8w9-mrhedzs-projects.vercel.app/
 
 Este frontend consume la API:
 
-```id="k1l9qz"
 https://chatbot-sales-api-production.up.railway.app/api/chat
-```
+
 
 ---
 
