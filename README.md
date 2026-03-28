@@ -1,73 +1,104 @@
-# React + TypeScript + Vite
+# Chatbot Sales Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interfaz web de un chatbot conversacional enfocado en ventas, catálogo de productos y simulación de pedidos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripción
 
-## React Compiler
+Este proyecto es una interfaz tipo chat que simula un asistente virtual de ventas en tiempo real.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El usuario puede interactuar de forma natural para:
 
-## Expanding the ESLint configuration
+* Consultar productos
+* Navegar por categorías
+* Simular pedidos
+* Confirmar compras
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Está diseñado como una demo funcional lista para evolucionar a soluciones con inteligencia artificial.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Interfaz tipo chat en tiempo real
+* Flujo conversacional guiado
+* Botones de acción rápida
+* Auto-scroll a nuevos mensajes
+* Simulación de pedidos
+* UX enfocada en conversión
+
+---
+
+## Tecnologías
+
+* React
+* TypeScript
+* Vite
+* Fetch API
+* CSS moderno (UI personalizada)
+
+---
+
+## Demo en producción
+
+```id="x9k2lm"
+https://chatbot-front-p6xs3s8w9-mrhedzs-projects.vercel.app/
+
+---
+
+## API Backend
+
+Este frontend consume la API:
+
+```id="k1l9qz"
+https://chatbot-sales-api-production.up.railway.app/api/chat
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Configuración
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Crear archivo `.env`:
+
+```env id="m4o8z2"
+VITE_API_URL=https://chatbot-sales-api-production.up.railway.app/api/chat
 ```
+
+---
+
+## Ejecutar localmente
+
+```bash id="t7n2qp"
+git clone <repo>
+cd chatbot-frontend
+npm install
+npm run dev
+```
+
+---
+
+## Experiencia de usuario (UX)
+
+El diseño está enfocado en:
+
+* Reducir fricción en la interacción
+* Guiar al usuario paso a paso
+* Simular una conversación real
+* Mejorar la toma de decisiones de compra
+
+---
+
+## Notas
+
+* Proyecto demo sin integración de IA (versión base)
+* Pensado para evolucionar a chatbot inteligente
+* Puede integrarse con e-commerce, CRM o APIs externas
+
+---
+
+## Autor
+
+Martín Hernández
+
+Full-Stack Developer | API Integrations | Microservices
